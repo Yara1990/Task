@@ -14,14 +14,14 @@ const key  = `{"address":"a8112ac2f02fa71f737929d18671b72e8609b78d","crypto":{"c
 
 func main(){
 	// connect to an ethereum node  hosted by infura
-	blockchain, err := ethclient.Dial("https://rinkeby.infura.io/v3/************************")
+	blockchain, err := ethclient.Dial("https://rinkeby.infura.io/v3/0e659bef259e47fc95c902d9fdf30767")
 
 	if err != nil {
 		log.Fatalf("Unable to connect to network:%v\n", err)
 	}
 
 	// Get credentials for the account to charge for contract deployments
-	auth, err := bind.NewTransactor(strings.NewReader(key), "***************")
+	auth, err := bind.NewTransactor(strings.NewReader(key), "agtl1234$")
 
 	if err != nil {
 		log.Fatalf("Failed to create authorized transactor: %v", err)
